@@ -22,8 +22,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->app->bind(Calculator::class, function (Application $app) {
-            return new Calculator($app->make(Currency::class));
-        });
+
     }
 }
